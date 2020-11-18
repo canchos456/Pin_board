@@ -7,6 +7,7 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require("jquery")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -16,6 +17,8 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-//= require jquery
-//= require bootstrap-sprockets
-//= require masonry/jquery.masonry
+//= require jquery 
+//= require rails-ujs 
+//= require masonry/masonry
+//= require turbolinks 
+//= require_tree . 

@@ -2,9 +2,12 @@
 %html
 %head
 	%title Pin Board
+	= csrf_meta_tags
 	= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' 
-	= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' 
-	= csrf_meta_tags 
+	= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+	= javascript_include_tag 'pins'
+	%script{:type => "text/javascript", :src => "https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min"}
+	%script{:type => "text/javascript", :src => "https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"} 
 
 %body
 	%nav.navbar.navbar-default
